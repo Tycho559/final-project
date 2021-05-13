@@ -1,15 +1,35 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Alegreya', serif;
 font-family: 'Architects Daughter', cursive;
 }
-header{
+
+
+/* html,
+body {
+    overflow-x: hidden;
+    text-align: center;
+    vertical-align: middle;
+} */
+
+body{
     background-image: url(https://www.mepixels.com/cache/94a03e78/prince-ashitaka-mononoke-hime-1140x1140-eD17ovioe.jpeg);
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+
+header {
+    height: 100px;
     background-size: cover;
     background-position: center;
 }
+
 ul{
     list-style: none;
     float: right;
@@ -59,6 +79,7 @@ ul li.active a{
 .footer{
     background:#000;
     padding:30px 0px;
+    margin-top: 100px;
     font-family: 'Play', sans-serif;
     text-align:center;
     }
@@ -117,11 +138,230 @@ ul li.active a{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-iframe{
+.Spirited{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  position: relative;
-  top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    top: -100px;
+    
+}
+.title-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.title-2 h3{
+    color: #fff;
+    font-size: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://www.mepixels.com/cache/94a03e78/prince-ashitaka-mononoke-hime-1140x1140-eD17ovioe.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    text-align: center;
+}
+.wrapper div {
+    margin: 100px auto 150px auto;
+}
+.wrapper p {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.num {
+    max-width: 500px;
+}
+p{
+    background-color: rgba(0, 0, 0 , 0.5);
+    padding: 10px;
+    backdrop-filter: blur(2px);
+}
+.contact *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.contact{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h4{
+    font-size: 100px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.contact .content p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.noBackground{
+    background-color: transparent !important;
+    
+    backdrop-filter: none;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h5{
+    font-weight: 500;
+    color: #00bcd4;
+    font-size: 30px;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h6{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactForm .Inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .Inputbox input  {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .Inputbox textarea  {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .Inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .Inputbox input:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+}
+.contactForm .Inputbox input:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .Inputbox textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactForm .Inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactForm .Inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width; 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
 }
